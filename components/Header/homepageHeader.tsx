@@ -18,7 +18,10 @@ const HomepageHeader = (props: IProps) => {
       <div className="col-span-3 items-center space-x-4 content-center text-lg flex">
         {/* Top Left Section */}
         <Link className="ml-3 mr-2" href={"/"}>
-          <Image src={GoldLogoIcon} alt="logo" width="120" height="32" />
+          <div className="flex items-center space-x-2">
+            <Image src={GoldLogoIcon} alt="Gluon logo" width={32} height={32} />
+            <span className="text-white font-semibold text-lg">Gluon</span>
+          </div>
         </Link>
         <div className="hidden md:block flex flex-row space-x-5 pl-2">
           <Link

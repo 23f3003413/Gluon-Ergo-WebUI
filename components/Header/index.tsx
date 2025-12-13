@@ -130,8 +130,9 @@ const Header = (props: IProps) => {
     <header className="grid grid-cols-7 items-center mx-3 py-4">
       <div className="col-span-3 items-center space-x-4 content-center text-lg flex">
         {/* Top Left Section */}
-        <Link className="ml-3 mr-2" href={"/"}>
-          <Image src={GoldLogoIcon} alt="logo" width="120" height="32" />
+        <Link className="ml-3 mr-2 flex items-center space-x-2" href={"/"}>
+            <Image src={GoldLogoIcon} alt="Gluon logo" width={28} height={28} />
+            <span className="text-white font-semibold text-base">Gluon</span>
         </Link>
         <div className="hidden sm:block flex flex-row space-x-5 pl-2">
           <Link
